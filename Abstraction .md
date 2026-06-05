@@ -29,7 +29,12 @@ To create an **abstract class** named `Shape` with an **abstract method** `calcu
 ---
 
 ## 💻 Program
+from abc import ABC, abstractmethod import math
 
+class type_shape(ABC): @abstractmethod def area(self): pass
+
+class Rectangle(type_shape): def init(self,l,b): self.l = l self.b =b def area(self): return self.lself.b class Circle(type_shape): def init(self,r): self.r = r def area(self): return 3.14self.r*self.r r = Rectangle(6, 4) c = Circle(7) print("Area of a rectangle:",r.area()) print("Area of a circle:",c.area())
 ## Output
-
+Area of a rectangle: 24 Area of a circle: 153.86
 ## Result
+Thus,the python program was run successfully for the given question
